@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body id="top">
-    <header>
-        <nav>
+<body >
+    <header id="top" data-aos="zoom-in">
+        <nav >
            <a class="logo" href="#top"><img class="logo" src="assets/images/logo.png" alt="logo"></a> 
             <ul class="navbar">
-                <li><a class="bouton primaire" href="#">Home</a></li>
-                <li><a class="bouton primaire" href="#">Work</a></li>
-                <li><a class="bouton primaire" href="#">Testimonials</a></li>
-                <li><a class="bouton primaire" href="#">About</a></li>  
+                <li><a class="bouton primaire" href="#top">Home</a></li>
+                <li><a class="bouton primaire" href="#work">Work</a></li>
+                <li><a class="bouton primaire" href="#profil">About</a></li>
+                <li><a  class="bouton primaire" href="#contact">Contacte</a></li>  
             </ul>
 
             <ul class="reseaux">
@@ -27,7 +28,7 @@
             </ul>
         
         </nav>
-        <section class="head">
+        <section class="head" >
             <div class="big-tittle">
                 <div class="tittle">
                  
@@ -45,55 +46,86 @@
     </header>
 
     <main>
-        <section class="work-contenaire">
+
+
+        <section id="work" class="work-contenaire">
             
-                <h3>Mes Réalisation</h3>
-                <div class="all-work">
-                    <div class="work">
+                <h3>Mes Réalisations</h3>
+                <div class="all-work"data-aos="fade-up">
+                     <div class="work">
 
-                        <div class="text">
+                         <div class="text" >
                             <h3 class="stl">Tracklist</h3>
-                        <p class="stl">J'ai réaliser un Album en HTML/CSS fait a la toile c'etait une forme d'exercice dont ou on avais le droit de choisir l'album qu'on voulait et de refaire sa tracklist et ajouter en lien les clip video si disponible </p>
-                        <a class="stl bouton primaire" href="https://gitlab9.github.io/album/">Mon Album </a>
-                        </div>
+                         <p class="stl">J'ai réaliser un Album en HTML/CSS fait a la toile c'etait une forme d'exercice dont ou on avais le droit de choisir l'album qu'on voulait et de refaire sa tracklist et ajouter en lien les clip video si disponible </p>
+                         <a target="_blank" class="stl bouton primaire" href="https://gitlab9.github.io/album/">Mon Album </a>
+                         </div>
 
-                        <div class="left-img">
-                            <img class="work-img" src="assets/images/img.jpg" alt="1er image de realisation ">
-                        </div>
+                         <div class="left-img">
+                            <img class="work-img img-tittle" src="assets/images/img.jpg" alt="1er image de realisation ">
+                         </div>
 
                     </div>
 
+                         <div class="work right">
+
+                         <div class="text" >
+                            <h3 class="stl">E-Shop</h3>
+                         <p class="stl">J'ai réaliser un e-shop factice mais qui est bien organiser et bien coder le bute était de réaliser un site e-comerce avec les tous se qu'on a appris </p>
+                         <a target="_blank" class="stl bouton primaire" href="https://gitlab9.github.io/shop/">Mon E-Shop </a>
+                         </div>
+
+                        <div class="left-img">
+                            <img class="work-img img-tittle" src="assets/images/img2.jpg" alt="1er image de realisation ">
+                          </div>
+
+                    </div>
+                          
 
 
+
+                </div>  
+        </section>
+
+        <section id="profil" data-aos="fade-up">
+            <div id="presentation" data-aos="zoom-in">
+                        <h2>Mon Parcours</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores atque nihil tenetur, alias facere minima labore laboriosam reiciendis quam nemo sed. Cum deleniti assumenda at fugiat in vel possimus.</p>
+                <a class="bouton primaire" href="">Contacter Moi</a>
+            </div>
+
+        </section>
+
+
+        <section id="contact" data-aos="fade-up">
+            <div class="all-contact">
+                <h2>Travaillion ensemble</h2>
+                <div class="input" data-aos="flip-left">
+                    <div class="inpute">
+                        <input type="text" placeholder="Votre Prénom">
+                    <input type="text" placeholder="Votre Nom">
+
+                    </div>
+                    
+                    <input type="email" placeholder="Votre Mail" size="20"> 
+                    <textarea name="text"  placeholder="Votre message"></textarea>
                 </div>
-                    
-                       
-    
-                    
-            
-        </section>
 
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-
-
-        <section>
-
+                <a class="bouton primaire l" href="">Envoyer</a>
+            </div>
         </section>
     </main>
 
 
-    <footer>
+    <footer  >
+       
         <p>
-
+            © Copyright gitlab9.com
         </p>
 
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
